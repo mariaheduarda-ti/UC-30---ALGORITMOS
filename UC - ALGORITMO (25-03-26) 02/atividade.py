@@ -1,6 +1,7 @@
 def calcular_estatisticas(*notas):
-    if not notas:
-        return 0,0,0,0
+    if len(notas) == 0:
+        print("Nenhuma nota informada.")
+        return
 
     soma = sum(notas)
     media = soma / len(notas)
@@ -9,5 +10,10 @@ def calcular_estatisticas(*notas):
 
     return soma, media, maior, menor
 
-soma, media, max_nota, min_nota = calcular_estatisticas(7, 8, 9)
-print(f"média: {media}")
+
+soma, media, maior, menor = calcular_estatisticas(7, 8, 9)
+
+print(f"Soma das notas: {soma}")
+print(f"Média: {media:.2f}")
+print(f"Maior nota: {maior}")
+print(f"Menor nota: {menor}")
