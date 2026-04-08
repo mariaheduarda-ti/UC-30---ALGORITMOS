@@ -1,8 +1,8 @@
-P = int(input("Digite a pontuação P: "))
-D = int(input("Digite a pontuação D: "))
-B = int(input("Digite a pontuação B: "))
+p = int(input("Digite a pontuação P: "))
+d = int(input("Digite a pontuação D: "))
+b = int(input("Digite a pontuação B: "))
 
-total = P + 2*D + 3*B
+total = p + 2*d + 3*b
 
 if total >= 150:
     print("Quantidade de bolos vendidos: ")
