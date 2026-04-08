@@ -1,14 +1,14 @@
-p = int(input("Digite a pontuação P: "))
-d = int(input("Digite a pontuação D: "))
-b = int(input("Digite a pontuação B: "))
+pão = int(input("Digite a quantidade de pãos vendidos: "))
+doce = int(input("Digite a quantidade de doces vendidos: "))
+bolo = int(input("Digite a quantidade de bolos vendidos: "))
 
-total = p + 2*d + 3*b
+total = pão + 2*doce + 3*bolo
 
 if total >= 150:
     print("Quantidade de bolos vendidos: ")
 elif total >= 120:
     print("Quantidades de doces vendidos: ")
 elif total >= 100:
-    print("Quantidades de pães: ")
+    print("Quantidades de pães vendidos: ")
 else:
-    print("Não merecem o prêmio")
+    print("Não merecem o prêmio =( ")
