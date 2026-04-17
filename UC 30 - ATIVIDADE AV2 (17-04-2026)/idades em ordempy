@@ -1,0 +1,9 @@
+idades = []
+
+for i in range(5):
+    idade = int(input("Digite uma idade: "))
+    idades.append(idade)
+
+idades.sort()
+
+print(idades)
